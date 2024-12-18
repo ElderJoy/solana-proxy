@@ -12,7 +12,7 @@ use state::*;
 
 use oapp::endpoint::{MessagingReceipt};
 
-declare_id!("BSvVL3d4nAMYkjVHdVA1ryttV25SvVydy1MPAr3dcsdt");
+declare_id!("7CfFVr1LEaBNjDhBJWrohW4xBxx6rKRUYTGpYpToBCdk");
 
 pub const OFT_SEED: &[u8] = b"OFT";
 pub const PEER_SEED: &[u8] = b"Peer";

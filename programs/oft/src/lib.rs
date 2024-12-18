@@ -16,7 +16,7 @@ use oapp::{
 };
 use state::*;
 
-declare_id!("GZGX6QfUo62VbPyYqPZS6t27Uke1dJmoAP6V3rw6ntTH");
+declare_id!("2JTTGs4P4o1i6hKWjD7MCPjnNfUKypFudYdjumHTiL1s");
 
 pub const OFT_SEED: &[u8] = b"OFT";
 pub const PEER_SEED: &[u8] = b"Peer";

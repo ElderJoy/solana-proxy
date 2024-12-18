@@ -1,6 +1,6 @@
 use anchor_lang::prelude::*;
 
-declare_id!("H8xZNU5ZNAySjGH2yfVWA6V5McxjZZkXN9j6CvC3evko");
+declare_id!("Dut1zwap9h9P2FAohfivPyRbuq27TNgsQZuic4RpKzBF");
 
 #[program]
 pub mod solana_proxy {
