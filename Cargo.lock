@@ -191,6 +191,7 @@ dependencies = [
  "anchor-derive-accounts",
  "anchor-derive-serde",
  "anchor-derive-space",
+ "anchor-syn",
  "arrayref",
  "base64 0.13.1",
  "bincode",
@@ -903,6 +904,15 @@ dependencies = [
 ]
 
 [[package]]
+name = "endpoint-mock"
+version = "0.1.0"
+dependencies = [
+ "anchor-lang",
+ "cpi-helper",
+ "solana-program",
+]
+
+[[package]]
 name = "env_logger"
 version = "0.9.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1353,6 +1363,17 @@ source = "git+https://github.com/LayerZero-Labs/LayerZero-v2.git?rev=7aebbd7c79b
 dependencies = [
  "anchor-lang",
  "endpoint",
+]
+
+[[package]]
+name = "oft"
+version = "0.1.0"
+dependencies = [
+ "anchor-lang",
+ "anchor-spl",
+ "oapp",
+ "solana-helper",
+ "utils",
 ]
 
 [[package]]
