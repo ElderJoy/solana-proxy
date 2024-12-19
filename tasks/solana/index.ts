@@ -28,21 +28,21 @@ import { OftPDA } from '@layerzerolabs/oft-v2-solana-sdk'
  * Derive common connection and UMI objects for a given endpoint ID.
  * @param eid {EndpointId}
  */
-// export const deriveConnection = async (eid: EndpointId) => {
-//     const privateKey = getSolanaPrivateKeyFromEnv()
-//     const connectionFactory = createSolanaConnectionFactory()
-//     const connection = await connectionFactory(eid)
-//     const umi = createUmi(connection.rpcEndpoint).use(mplToolbox())
-//     const umiWalletKeyPair = umi.eddsa.createKeypairFromSecretKey(bs58.decode(privateKey))
-//     const umiWalletSigner = createSignerFromKeypair(umi, umiWalletKeyPair)
-//     umi.use(signerIdentity(umiWalletSigner))
-//     return {
-//         connection,
-//         umi,
-//         umiWalletKeyPair,
-//         umiWalletSigner,
-//     }
-// }
+export const deriveConnection = async (eid: EndpointId) => {
+    const privateKey = getSolanaPrivateKeyFromEnv()
+    const connectionFactory = createSolanaConnectionFactory()
+    const connection = await connectionFactory(eid)
+    const umi = createUmi(connection.rpcEndpoint).use(mplToolbox())
+    const umiWalletKeyPair = umi.eddsa.createKeypairFromSecretKey(bs58.decode(privateKey))
+    const umiWalletSigner = createSignerFromKeypair(umi, umiWalletKeyPair)
+    umi.use(signerIdentity(umiWalletSigner))
+    return {
+        connection,
+        umi,
+        umiWalletKeyPair,
+        umiWalletSigner,
+    }
+}
 
 /**
  * Derive the keys needed for the OFT program.

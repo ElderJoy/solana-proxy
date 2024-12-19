@@ -16,7 +16,7 @@ describe("Test Solana OFT", () => {
     anchor.setProvider(provider)
 
     const oftProgram = anchor.workspace.Oft as Program<Oft>;
-    const endpointProgram = new Program(endpointIdl as Idl, LAYERZERO_ENDPOINT_PROGRAM_ID, provider) as Program<Endpoint>
+    const endpointProgram = new Program(endpointIdl as Idl, LAYERZERO_ENDPOINT_PROGRAM_ID, provider) as unknown as Program<Endpoint>
 
     before("Preparing test environment", async () => {
         await initOft(wallet, oftProgram, endpointProgram)
